@@ -1,0 +1,231 @@
+/* FONT */
+
+/* .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+} */
+
+/* BODY */
+
+body {
+    font-family: 'Lato';
+}
+
+/* NAVBAR */
+
+.navbar {
+    background-color: #000000;
+}
+
+.nav-link {
+    color: #ffffff !important;
+}
+
+/* CAROUSEL */
+
+.carousel-custom {
+    height: 800px;
+    background-color: #000000;
+}
+
+.carousel-custom .carousel-inner {
+    height: 100%;
+}
+
+.carousel-custom .carousel-item {
+    height: 100%;
+}
+
+.carousel-custom img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.33;
+}
+
+/* .carousel-custom .carousel-caption {
+    width: 400px;
+    height: auto;
+    background-color: #cd006b;
+} */
+
+.carousel-custom .carousel-caption h5 {
+    background-color: #cd006b;
+    padding: 1%;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.carousel-custom .carousel-caption p {
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media (min-width: 768px) {
+    .carousel-custom {
+        height: 600px;
+    }
+}
+
+/* INFORMATION SECTION */
+
+.card-img-inf {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+.inf-section-main h5 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* PRODUCTS SECTION */
+
+.card-products div {
+    height: 24rem;
+    width: auto;
+}
+
+.card-products p {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.card-img-products {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #cd006b;
+}
+
+.imagen-shadow {
+    transition: box-shadow 0.3s ease;
+    width: 40px;
+    height: auto;
+}
+
+.imagen-shadow:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.logo-stamp-footer {
+    width: 250px;
+    height: auto;
+    margin: 2px;
+}
+
+
+.accordion-button {
+    background-color: transparent !important;
+    color: #333;
+    box-shadow: none;
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    color: #000;
+    box-shadow: none;
+}
+
+.accordion-item {
+    border: none;
+}
+
+.accordion-body a:hover {
+    color: #ff5733;
+    text-decoration: underline;
+}
+
+.list-footer-custom {
+    list-style: none;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.list-footer-custom a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.list-footer-custom li {
+    border-bottom: 1px solid #000;
+}
+
+#collapseCategorias,
+#collapseInfo {
+    opacity: 1 !important;
+    background-color: #cd006b;
+}
+
+@media (min-width: 768px) {
+
+    #collapseCategorias,
+    #collapseInfo {
+        display: block !important;
+        height: auto !important;
+        opacity: 1 !important;
+        background-color: #cd006b;
+    }
+}
+
+@media (min-width: 768px) {
+    .accordion-button {
+        pointer-events: none;
+        /* Desactiva el click */
+    }
+
+    .accordion-button::after {
+        display: none;
+        /* Oculta el ícono de desplegar */
+    }
+}
+
+
+/* PAGES SERVICIOS */
+
+.paragraph-main {
+    font-size: 1.9rem;
+    font-weight: 400;
+    font-style: normal;
+}
