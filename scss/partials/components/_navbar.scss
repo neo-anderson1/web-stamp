@@ -1,0 +1,33 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+.navbar {
+    background-color: $third-color;
+
+    .navbar-mobile {
+        button {
+            img {
+                width: 35px;
+                height: auto;
+            }
+        }
+    }
+
+    .nav-item {
+        a {
+            color: #ffffff;
+            font-family: "Smooch Sans", sans-serif;
+            font-weight: 400;
+            font-size: 35px;
+
+            @include desktop {
+                opacity: 0.33;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,34 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+.inf-section-contacto {
+    @include desktop {
+        max-width: 1200px;
+        margin: 30px auto;
+    }
+
+    h1 {
+        font-family: "Nunito", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    p {
+        font-family: "Nunito", sans-serif;
+        font-weight: 500;
+        font-size: 25px;
+    }
+
+    .form-label {
+        font-family: "Nunito", sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    .btn {
+        background-color: $firt-color;
+        font-family: "Smooch sans", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+    }
+}

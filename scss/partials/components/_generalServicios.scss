@@ -1,0 +1,86 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+.inf-servicios {
+    padding: 10px;
+
+    @include desktop {
+        max-width: 1200px;
+        margin: 30px auto;
+    }
+
+    p {
+        font-family: "Nunito", sans-serif;
+        font-weight: 500;
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    div {
+        h1 {
+            font-family: "Nunito", sans-serif;
+            font-weight: 700;
+            font-size: 35px;
+            text-align: center;
+            background-color: $third-color;
+            color: #ffffff;
+            border-radius: 30px;
+            padding: 10px;
+            margin: 20px 0;
+
+        }
+
+        .inf-section-servicios {
+            @include desktop {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            div {
+                background-color: $firt-color;
+                padding: 20px;
+                border-radius: 20px;
+                margin-bottom: 20px;
+
+                h3 {
+                    font-family: "Nunito", sans-serif;
+                    font-weight: 500;
+                    font-size: 25px;
+                    margin: 20px 0;
+                    color: #ffffff;
+
+                    @include desktop {
+                        font-size: 30px;
+                    }
+                }
+
+                ul {
+                    li {
+                        font-family: "Nunito", sans-serif;
+                        font-weight: 400;
+                        font-size: 20px;
+                        list-style: square;
+                        color: #ffffff;
+
+                        @include desktop {
+                            font-size: 26px;
+                        }
+                    }
+                }
+            }
+
+            img {
+                max-width: 100%;
+                max-height: auto;
+                border-radius: 10px;
+                padding: 5px;
+                margin-bottom: 40px;
+                justify-self: center;
+
+                @include desktop {
+                    max-height: 500px;
+                }
+            }
+        }
+    }
+}

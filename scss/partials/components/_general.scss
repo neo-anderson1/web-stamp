@@ -1,0 +1,175 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+.carousel {
+    .carousel-inner {
+        .carousel-item {
+            height: 31rem;
+            background-color: $third-color;
+
+            .image-container {
+                width: 250px;
+                display: block;
+                margin: 20px auto 0;
+
+            }
+
+            .carousel-caption {
+
+                h5 {
+                    width: 300px;
+                    background-color: $second-color;
+                    padding: 10px;
+                    border-radius: 30px;
+                    font-family: "DynaPuff", system-ui;
+                    font-weight: 300;
+                    font-size: 25px;
+                    margin: 0 auto 0;
+                }
+
+                p {
+                    font-family: "Nunito", sans-serif;
+                    font-weight: 300;
+                    font-size: 20px;
+                    margin: 3px 0px 3px 0px;
+
+                    span {
+                        color: green;
+                        font-weight: 800;
+                    }
+                }
+            }
+        }
+    }
+
+    .carousel-control-prev {
+        img {
+            width: 30px;
+            height: auto;
+            transform: rotate(180deg);
+        }
+
+    }
+
+    .carousel-control-next {
+        img {
+            width: 30px;
+            height: auto;
+        }
+
+    }
+}
+
+.information-basic {
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    padding: 10px;
+    background-color: black;
+
+    @include desktop {
+        grid-template-columns: repeat(4, 250px);
+        align-items: center;
+    }
+
+    div {
+        margin: 10px auto 10px;
+
+        img {
+            width: 80px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-family: "Nunito", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            margin: 1px auto 1px;
+            color: #ffffff;
+        }
+
+        p {
+            font-family: "Nunito", sans-serif;
+            font-weight: 500;
+            font-size: 13px;
+            color: #ffffff;
+        }
+
+        @include desktop {
+            &:hover {
+                filter: drop-shadow(5px 5px 5px $fifth-color);
+            }
+        }
+    }
+}
+
+.title-general {
+    font-family: "Smooch sans", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    margin: 10px;
+
+    @include desktop {
+        max-width: 1200px;
+        margin: 30px auto;
+    }
+}
+
+.container-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
+    margin: 20px 0;
+
+    @include desktop {
+        max-width: 1200px;
+        margin: 30px auto;
+    }
+
+    .card-product {
+        border: 1px solid $fifth-color;
+        border-radius: 5px;
+        margin: 5px;
+
+        img {
+            width: 100%;
+            margin-bottom: 10px;
+            border-bottom: 1px solid $fifth-color;
+            padding: 5px;
+            height: 200px;
+        }
+
+        h3 {
+            font-family: "Nunito", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            padding: 0px 5px;
+            height: 70px;
+        }
+
+        p {
+            font-family: "Nunito", sans-serif;
+            font-weight: 800;
+            font-size: 20px;
+            font-style: italic;
+            padding: 0px 5px;
+        }
+
+        .button-card {
+            font-family: "Smooch sans", sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            background-color: $firt-color;
+            padding: 5px;
+            border-radius: 5px;
+            margin: 5px;
+
+            a {
+                text-decoration: none;
+                color: #ffffff;
+            }
+        }
+    }
+}

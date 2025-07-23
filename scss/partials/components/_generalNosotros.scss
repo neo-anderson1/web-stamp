@@ -1,0 +1,41 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+.inf-section-nosotros {
+    @include desktop {
+        max-width: 1200px;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    div {
+        p {
+            font-family: "Nunito", sans-serif;
+            font-weight: 500;
+            font-size: 25px;
+        }
+
+        h3 {
+            font-family: "Nunito", sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+        }
+
+        ul {
+            li {
+                font-family: "Nunito", sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                list-style: square;
+            }
+        }
+    }
+
+    img {
+        padding: 10px;
+        max-width: 100%;
+        max-height: auto;
+        border-radius: 30px;
+    }
+}
