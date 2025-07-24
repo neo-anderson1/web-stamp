@@ -1,0 +1,158 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+footer {
+    background-color: $fifth-color;
+    border-top: 3px solid $fourth-color;
+
+    .footer-content {
+        @include desktop {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-discount {
+            padding: 15px;
+            border-bottom: 4px solid $fourth-color;
+
+            @include desktop {
+                border-bottom: none;
+            }
+
+            h3 {
+                font-family: "Nunito", sans-serif;
+                font-weight: 800;
+                font-size: 20px;
+            }
+
+            .input-group {
+                button {
+                    background-color: $firt-color;
+                    font-family: "Smooch sans", sans-serif;
+                    font-weight: 400;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .footer-category-list {
+            padding: 15px;
+            border-bottom: 5px solid $fourth-color;
+
+            @include desktop {
+                border-bottom: none;
+            }
+
+            h3 {
+                font-family: "Nunito", sans-serif;
+                font-weight: 800;
+                font-size: 25px;
+            }
+
+            ul {
+                li {
+                    list-style: none;
+                    border-top: 2px solid $third-color;
+                    list-style-position: outside;
+
+                    a {
+                        text-decoration: none;
+                        color: #ffffff;
+                        font-family: "Smooch sans", sans-serif;
+                        font-weight: 400;
+                        font-size: 25px;
+                    }
+
+                    @include desktop {
+                        opacity: 0.33;
+
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-inf-list {
+            padding: 15px;
+            border-bottom: 5px solid $fourth-color;
+
+            @include desktop {
+                border-bottom: none;
+            }
+
+            h3 {
+                font-family: "Nunito", sans-serif;
+                font-weight: 800;
+                font-size: 25px;
+            }
+
+            ul {
+                li {
+                    list-style: none;
+                    border-top: 2px solid $third-color;
+                    list-style-position: outside;
+
+                    a {
+                        text-decoration: none;
+                        color: #ffffff;
+                        font-family: "Smooch sans", sans-serif;
+                        font-weight: 400;
+                        font-size: 25px;
+                    }
+
+                    @include desktop {
+                        opacity: 0.33;
+
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-social-media {
+            padding: 15px;
+
+            .icon-stamp {
+                width: 250px;
+                display: none;
+
+                @include desktop {
+                    display: flex;
+                    justify-content: center;
+                    margin: 0 auto;
+                }
+            }
+
+            ul {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                padding: 20px 0;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+
+                        img {
+                            width: 60px;
+                            height: auto;
+
+                            @include desktop {
+                                width: 45px;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

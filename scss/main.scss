@@ -1,0 +1,16 @@
+// UTILITIES
+@use "./partials/utilities/mixins";
+@use "./partials/utilities/variables";
+
+// BASE
+@use "./partials/base/reset";
+@use "./partials/base/font";
+
+// COMPONENTS
+@use "./partials/components/navbar";
+@use "./partials/components/general";
+@use "./partials/components/footer";
+@use "./partials/components/generalProductos";
+@use "./partials/components/generalServicios";
+@use "./partials/components/generalNosotros";
+@use "./partials/components/generalContacto"
