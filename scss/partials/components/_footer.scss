@@ -148,6 +148,12 @@ footer {
                             @include desktop {
                                 width: 45px;
                                 height: auto;
+                                transition: box-shadow 0.3s ease;
+                                border-radius: 50%;
+
+                                &:hover {
+                                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+                                }
                             }
                         }
                     }

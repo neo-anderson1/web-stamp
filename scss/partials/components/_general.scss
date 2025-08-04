@@ -7,6 +7,11 @@
             height: 31rem;
             background-color: $third-color;
 
+            // @include desktop {
+            //     display: grid;
+            //     grid-template-columns: repeat(2, 1fr);
+            // }
+
             .image-container {
                 width: 250px;
                 display: block;
@@ -110,6 +115,7 @@
     font-weight: 600;
     font-size: 40px;
     margin: 10px;
+    padding: 10px;
 
     @include desktop {
         max-width: 1200px;
@@ -122,6 +128,7 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 5px;
     margin: 20px 0;
+    padding: 10px;
 
     @include desktop {
         max-width: 1200px;
@@ -131,30 +138,34 @@
     .card-product {
         border: 1px solid $fifth-color;
         border-radius: 5px;
-        margin: 5px;
 
-        img {
-            width: 100%;
-            margin-bottom: 10px;
+        .image-card {
             border-bottom: 1px solid $fifth-color;
-            padding: 5px;
-            height: 200px;
+
+            img {
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 5px;
+            }
         }
 
-        h3 {
-            font-family: "Nunito", sans-serif;
-            font-weight: 600;
-            font-size: 20px;
-            padding: 0px 5px;
-            height: 70px;
-        }
+        .information-card {
 
-        p {
-            font-family: "Nunito", sans-serif;
-            font-weight: 800;
-            font-size: 20px;
-            font-style: italic;
-            padding: 0px 5px;
+            h3 {
+                font-family: "Nunito", sans-serif;
+                font-weight: 600;
+                font-size: 20px;
+                padding: 0px 5px;
+            }
+
+            p {
+                font-family: "Nunito", sans-serif;
+                font-weight: 800;
+                font-size: 20px;
+                font-style: italic;
+                padding: 0px 5px;
+            }
         }
 
         .button-card {
@@ -165,6 +176,7 @@
             padding: 5px;
             border-radius: 5px;
             margin: 5px;
+            display: flex;
 
             a {
                 text-decoration: none;
